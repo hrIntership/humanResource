@@ -1,0 +1,73 @@
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="baseLayout" template="/WEB-INF/pages/layout.jsp">
+		<put-attribute name="title" value="Sample Title" />
+		<put-attribute name="header" value="/WEB-INF/pages/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/pages/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/pages/footer.jsp" />
+	</definition>
+
+	<definition name="index" extends="baseLayout">
+		<put-attribute name="title" value="index" />
+		<put-attribute name="body" value="/WEB-INF/pages/index.jsp" />
+	</definition>
+
+	<definition name="person-new" extends="baseLayout">
+		<put-attribute name="title" value="person-new" />
+		<put-attribute name="menu"
+			value="/WEB-INF/pages/person/menuPerson.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/person/person-new.jsp" />
+	</definition>
+
+	<definition name="person-list" extends="baseLayout">
+		<put-attribute name="title" value="person-list" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/person/person-list.jsp" />
+	</definition>
+
+	<definition name="person-edit" extends="baseLayout">
+		<put-attribute name="title" value="person-edit" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/person/person-edit.jsp" />
+	</definition>
+
+	<definition name="background-new" extends="baseLayout">
+		<put-attribute name="title" value="background-new" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/background/background-new.jsp" />
+	</definition>
+
+	<definition name="background-edit" extends="baseLayout">
+		<put-attribute name="title" value="background-edit" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/background/background-edit.jsp" />
+	</definition>
+
+	<definition name="background-listId" extends="baseLayout">
+		<put-attribute name="title" value="background-listId" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/background/background-listId.jsp" />
+	</definition>
+
+	<definition name="education-new" extends="baseLayout">
+		<put-attribute name="title" value="education-new" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/education/education-new.jsp" />
+	</definition>
+
+
+	<definition name="education-edit" extends="baseLayout">
+		<put-attribute name="title" value="education-edit" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/education/education-edit.jsp" />
+	</definition>
+
+	<definition name="education-listId" extends="baseLayout">
+		<put-attribute name="title" value="education-listId" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/education/education-listId.jsp" />
+	</definition>
+</tiles-definitions>  
